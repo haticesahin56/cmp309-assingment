@@ -1,0 +1,52 @@
+/* ===== Style B – Horizontal layout for UrbanWear Collective ===== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Global font */
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+/* Prevent wrapping: A–E must stay on the same line no matter what */
+.boxes {
+    white-space: nowrap; /* no wrapping */
+    height: 100%;
+}
+
+/* Base box style (A–F) */
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 150px;                /* Style B box height */
+    background-color: #eeeff2;
+    border-left: 10px dotted #D0D0FF; /* 10px dotted left border */
+    margin-right: 10px;           /* space between boxes */
+    padding: 10px;                /* 10px from text to edges */
+}
+
+/* Hover effect: must change both box color and text color */
+.box:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: goldenrod;
+}
+
+/* F box stays fixed at the bottom-right corner */
+.box-f {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 0; /* override right spacing */
+}
+
+
